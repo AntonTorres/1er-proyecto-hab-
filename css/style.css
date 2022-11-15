@@ -1,5 +1,64 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+
+    display: grid;
+
+    grid-template-rows: 5rem 1fr 5rem;
+    grid-template-columns: repeat(2, 50%);
+
+    grid-template-areas: 
+    "header header"
+    "color colores"
+    "foter footer";
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    min-width: 100%;
+}
+
+main section menu {
+    list-style: none;
+
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+section {
+    min-width: 100%;
+}
+
+#titulo {
+    grid-area: header;
+    background-color: cyan;
+}
+
+#color {
+    grid-area: color;
+    background-color: orange;
+}
+
+#colores {
+    grid-area: colores;
+    background-color: orangered;
+}
+
+#divuno {
+    grid-area: foter;
+}
+
+#divdos {
+    grid-area: footer;
 }
