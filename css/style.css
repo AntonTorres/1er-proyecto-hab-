@@ -16,7 +16,7 @@ body {
     grid-template-areas: 
     "header header"
     "color colores"
-    "foter footer";
+    "footer footer";
 }
 
 header {
@@ -55,10 +55,17 @@ section {
     background-color: orangered;
 }
 
-#divuno {
-    grid-area: foter;
+/* #divuno {
+    grid-area: aciertos;
+    background-color: gray;
 }
 
 #divdos {
+    grid-area: fallos;
+    background-color: green;
+} */
+
+#footer {
     grid-area: footer;
+    background-color: gray;
 }
