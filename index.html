@@ -1,41 +1,39 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Adivina el Color</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header id="titulo">
-      <h1>Colores Locos</h1>
-      <p>
-        Selecciona el color que se corresponde con la imagen. Para ganar debes
+    <h1>
+      ADIVINA EL COLOR
+      <div id="colorAleatorio">RGB</div>
+      <p id="parrafo">
+        Selecciona el color que se corresponde con el código. Para ganar debes
         acumular tres aciertos, si por lo contrario acumulas tres fallos,
         pierdes.
       </p>
-    </header>
-    <main>
-        <section id="color">Color referencia</section>
-        <section id="colores">
-            <menu>
-                <li id="uno">1</li>
-                <li id="dos">2</li>
-                <li id="tres">3</li>
-                <li id="cuatro">4</li>
-                <li id="cinco">5</li>
-                <li id="seis">6</li>
-                <li id="siete">7</li>
-                <li id="ocho">8</li>
-                <li id="nueve">9</li>
-            </menu>
-        </section>
-    </main>
+    </h1>
 
-    <footer id="footer">
-      <div id="divuno"></div>
-      <div id="divdos"></div>
-  </footer>
+    <div id="franja">
+      <button id="reset">Colores Nuevos</button>
+      <span id="mensaje"></span>
+      <div id="aciertos">0</div>
+      <div id="fallos">0</div>
+    </div>
+
+    <div id="container">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
