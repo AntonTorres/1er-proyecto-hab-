@@ -1,18 +1,14 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
 body {
-    background-color: #232323;
+    background-color: rgb(240, 240, 221);
     margin: 0;
-    font-family: "Montserrat", "Avenir";
+    font-family: 'Secular One', sans-serif;;
 }
 
-.square {
+.cuadrado {
      width: 30%;
-     background: purple;
+     background: rgb(240, 240, 221);
      padding-bottom: 30%;
      float: left;
      margin: 1.66%;
@@ -22,9 +18,7 @@ body {
      -moz-transition: background 0.6s;
 }
 
-#container {
-    /* 0 margen arriba y abajo; auto a la derecha e izquierda para que tengan el mismo valor
-    en cada lado */
+#contenedor {
     margin: 20px auto;
    max-width: 600px;  
 }
@@ -36,13 +30,14 @@ body {
 #mensaje {
     display: inline-block;
     width: 20%;
+    color: rgb(42, 165, 181);
 }
 
 h1 {
-    color: white;
+    color: rgb(240, 240, 221);
     text-align: center;
     line-height: 1.1;
-    background-color: steelblue;
+    background-color: rgb(42, 165, 181);
     margin: 0;
     font-weight: normal;
     text-transform: uppercase;
@@ -57,7 +52,7 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: white;
+    background-color: rgb(240, 240, 221);
     padding: 0.5rem;
     height: 30px;
     text-align: center;
@@ -67,19 +62,20 @@ h1 {
 
 
 .seleccionado {
-    color: white;
-    background: steelblue;
+    color: rgb(240, 240, 221);
+    background: rgb(42, 165, 181);
 }
 
 button {
     border: none;
     background: none;
     text-transform: uppercase;
+    border-radius:15%;
+
     height: 100%;
     font-weight: 700;
-    color: steelblue;
+    color: rgb(42, 165, 181);
     letter-spacing: 1px;
-    font-size: inherit;
     transition: all 0.3s;
     --webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -87,6 +83,6 @@ button {
 } 
 
 button:hover {
-    color: white;
-    background: steelblue;
+    color: rgb(240, 240, 221);
+    background: rgb(42, 165, 181);
 }
