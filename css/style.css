@@ -20,7 +20,8 @@ body {
 
 #contenedor {
     margin: 20px auto;
-   max-width: 600px;  
+   max-width: 600px; 
+   cursor: pointer; 
 }
 
 #colorAleatorio {
@@ -46,6 +47,16 @@ h1 {
 
 #parrafo {
     font-size: 55%;
+}
+
+#aciertos {
+    color: rgb(42, 165, 181);
+
+}
+
+#fallos {
+    color: red;
+
 }
 
 #franja {
@@ -85,4 +96,6 @@ button {
 button:hover {
     color: rgb(240, 240, 221);
     background: rgb(42, 165, 181);
+    cursor: pointer;
 }
+

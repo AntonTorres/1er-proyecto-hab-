@@ -1,13 +1,16 @@
 let numCuadrados = 9;
 let colores = [];
 let colorGenerado;
-
 let cuadrados = document.querySelectorAll(".cuadrado");
 let colorAleatorio = document.getElementById("colorAleatorio");
 let mensaje = document.querySelector("#mensaje");
 let h1 = document.querySelector("h1");
 let botonReset = document.getElementById("reset");
 let dificultad = document.querySelectorAll(".modo");
+let aciertos = 0;
+let fallos = 0;
+let acierto = document.querySelector("#aciertos");
+let fallo = document.querySelector("#fallos");
 
 init();
 
@@ -16,20 +19,50 @@ function init() {
     setupCuadrados();
     reset();
 }
-
 function setupCuadrados() {
     for (let i = 0; i < cuadrados.length; i++){
         cuadrados[i].addEventListener("click", function(){
             let colorClickeado = this.style.backgroundColor;
-            if (colorClickeado === colorGenerado){
+            if (colorClickeado === colorGenerado && aciertos <= 2){
                 mensaje.textContent = "¡Correcto!";
-                botonReset.textContent = "Jugar de nuevo";
+                botonReset.textContent = "Más colores!";
                 cambiarColores(colorClickeado);
                 h1.style.backgroundColor = colorClickeado;
+                aciertos++;
+                acierto.textContent = "ACIERTOS: 1";
+
+                if (aciertos === 2) {
+                    acierto.textContent = "ACIERTOS: 2";
+                }
+
+                if (aciertos === 3) {
+                    acierto.textContent = "ACIERTOS: 3";
+                    mensaje.textContent = "¡Correcto! Has ganado!";
+                    botonReset.textContent = "Vuelve a jugar!";
+                    aciertos = 0;
+                    fallos = 0;
+                    fallo.textContent = "FALLOS";
+
+                }
+                
             } else {
                 this.style.backgroundColor = "rgb(240, 240, 221)";
                 mensaje.textContent = "¡Vuelve a intentarlo!";
-                
+                fallos++;
+                fallo.textContent = "FALLOS: 1";
+
+                if (fallos === 2) {
+                    fallo.textContent = "FALLOS: 2";
+                }
+
+                if (fallos === 3) {
+                    mensaje.textContent = "Has perdido.";
+                    botonReset.textContent = "Jugar de nuevo";
+                    fallo.textContent = "FALLOS: 3";
+                    fallos = 0;
+                    aciertos = 0;
+                    setTimeout(reset, 500)
+                }
             }
         });
     }
@@ -55,13 +88,30 @@ function reset() {
         if (colores[i]) {
             cuadrados[i].style.display = "block";
             cuadrados[i].style.background = colores[i];
+            if (aciertos === 0) {
+                acierto.textContent = "ACIERTOS";
+            }
+            if (aciertos === 1) {
+                acierto.textContent = "ACIERTOS: 1";
+            }
+            if (aciertos === 2) {
+                acierto.textContent = "ACIERTOS: 2";
+
+            }
+            if (fallos === 0) {
+                fallo.textContent = "FALLOS";
+            }
+            if (fallos === 3) {
+                acierto.textContent = "ACIERTOS";
+            }
         } else {
             cuadrados[i].style.display = "none";
-        }     
+        }
     }
     h1.style.backgroundColor = "rgb(42, 165, 181)";
     botonReset.textContent = "Colores Nuevos";
     mensaje.textContent = "";
+    
 }
 
 botonReset.addEventListener("click", function(){
