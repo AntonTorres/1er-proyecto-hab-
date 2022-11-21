@@ -46,7 +46,7 @@ function setupCuadrados() {
                 }
                 
             } else {
-                this.style.backgroundColor = "rgb(9, 82, 85)";
+                this.style.backgroundColor = "#FCEEF8";
                 mensaje.textContent = "¡Vuelve a intentarlo!";
                 fallos++;
                 fallo.textContent = "FALLOS: 1";

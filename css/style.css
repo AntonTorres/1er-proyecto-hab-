@@ -53,7 +53,7 @@ body {
 #mensaje {
     display: inline-block;
     width: 20%;
-    color: rgb(7, 107, 121);
+    color: rgb(99, 99, 89);
 }
 
 h1 {
@@ -72,7 +72,7 @@ h1 {
 }
 
 #aciertos {
-    color: rgb(42, 165, 181);
+    color: rgb(99, 99, 89);
 
 }
 
@@ -85,18 +85,18 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(240, 240, 221);
+    background-color: #FCEEF8;
     padding: 0.5rem;
     height: 30px;
     text-align: center;
-    color: black;
+    color: rgb(99, 99, 89);
 
 }
 
 
 .seleccionado {
-    color: rgb(240, 240, 221);
-    background: rgb(42, 165, 181);
+    color: rgb(99, 99, 89);
+    background: rgb(120, 225, 228);
 }
 
 button {
@@ -107,7 +107,7 @@ button {
 
     height: 100%;
     font-weight: 700;
-    color: rgb(42, 165, 181);
+    color: rgb(99, 99, 89);
     letter-spacing: 1px;
     transition: all 0.3s;
     --webkit-transition: all 0.3s;
@@ -116,8 +116,8 @@ button {
 } 
 
 button:hover {
-    color: rgb(240, 240, 221);
-    background: rgb(42, 165, 181);
+    color: rgb(99, 99, 89);
+    background: rgb(120, 225, 228);
     cursor: pointer;
 }
 
