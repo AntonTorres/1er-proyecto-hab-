@@ -108,7 +108,7 @@ function reset() {
             cuadrados[i].style.display = "none";
         }
     }
-    h1.style.backgroundColor = "rgb(120, 225, 228)";
+    h1.style.backgroundColor = "#007ABB";
     botonReset.textContent = "Colores Nuevos";
     mensaje.textContent = "";
     

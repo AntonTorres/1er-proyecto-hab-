@@ -12,7 +12,7 @@ body {
 
 .cuadrado {
      width: 30%;
-     background: rgb(230, 230, 67);
+     background: rgb(243, 243, 196);
      padding-bottom: 30%;
      float: left;
      margin: 1.66%;
@@ -53,14 +53,14 @@ body {
 #mensaje {
     display: inline-block;
     width: 20%;
-    color: rgb(99, 99, 89);
+    color: #007ABB;
 }
 
 h1 {
-    color: rgb(99, 99, 89);
+    color: #FCEEF8;
     text-align: center;
     line-height: 1.1;
-    background-color: rgb(9, 82, 85);
+    background-color: #007ABB;
     margin: 0;
     font-weight: normal;
     text-transform: uppercase;
@@ -72,7 +72,7 @@ h1 {
 }
 
 #aciertos {
-    color: rgb(99, 99, 89);
+    color: #007ABB;
 
 }
 
@@ -89,14 +89,14 @@ h1 {
     padding: 0.5rem;
     height: 30px;
     text-align: center;
-    color: rgb(99, 99, 89);
+    color: #007ABB;
 
 }
 
 
 .seleccionado {
-    color: rgb(99, 99, 89);
-    background: rgb(120, 225, 228);
+    color: #FCEEF8;
+    background: #007ABB;
 }
 
 button {
@@ -107,7 +107,7 @@ button {
 
     height: 100%;
     font-weight: 700;
-    color: rgb(99, 99, 89);
+    color: #007ABB;
     letter-spacing: 1px;
     transition: all 0.3s;
     --webkit-transition: all 0.3s;
@@ -116,8 +116,8 @@ button {
 } 
 
 button:hover {
-    color: rgb(99, 99, 89);
-    background: rgb(120, 225, 228);
+    color: #FCEEF8;
+    background: #007ABB;
     cursor: pointer;
 }
 
